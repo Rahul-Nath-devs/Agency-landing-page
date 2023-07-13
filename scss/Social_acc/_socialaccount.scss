@@ -1,0 +1,29 @@
+.social_acc{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+   ul{
+    li{
+      display: inline-block;
+      &:hover a{
+       background-color: $primarycolor;
+       color:$secondarycolor;
+      }
+
+      a{
+        border: 1px solid #fdc11f;
+        width: 35px;
+        height: 35px;
+        line-height: 35px ;
+        display: inline-block;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 5px;
+        border-radius: 20px;
+        color: $primarycolor;
+        transition: 0.2s ease-in;
+      }
+    }
+   }
+
+  }

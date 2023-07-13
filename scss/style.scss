@@ -1,0 +1,150 @@
+//  common css
+@import "../scss/common/common";
+// Variables
+@import "../scss/variables/variable";
+// responsive--functions
+@import "../scss/function-responsive/function";
+// seacrhbar
+@import "../scss/searchBar/seacrh";
+// social account
+@import "../scss/Social_acc/socialaccount";
+
+
+#top_part{
+    background-color: $secondarycolor;
+
+    .nav-item{
+        padding: 10px 0;
+        transition: 0.2s ease-in;
+        &:hover a{
+            border: 1px solid #fdc11f;
+          border-radius: 20px;
+        }
+       
+        a{
+            color:#ffff;
+            margin: 0 10px;
+          padding: 10px 15px;
+
+       
+          }
+             
+
+        }
+        
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           a{
+            display: flex;
+            justify-content: center;
+            img{
+              @include phone(){
+                width: 80%;
+                text-align: center;
+               }
+           }
+            }
+        }
+        .comment{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+
+          a{
+            color: #fff;
+            padding: 5px 10px;
+           transition: 0.2s ease-in;    
+           border-radius: 20px;
+            &:hover{
+              border: 1px solid $primarycolor;
+             
+            }
+          
+          }
+        }
+
+      
+       
+    }
+
+    #main_cnt{
+      background-color:$secondarycolor;    
+      
+
+      .cont{
+
+        h1{
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 800;
+          color: $primarycolor;
+          font-size: 80px;
+          text-align: center;
+          margin-top: 60px;
+          @include phone(){
+            font-size: 60px;
+           }
+        
+          span{
+            color: #fff;
+           @include phone(){
+            font-size: 50px;
+           }
+          }
+        }
+        p{
+          color: #fff;
+          text-align: center;
+          font-size: 15px;
+          @include phone(){
+            font-size: 10px;
+           }
+        }
+
+        .btn{
+          display: flex;
+          justify-content: center;
+          .login_btn{
+            background-color: transparent;
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: $primarycolor;
+            border:1px solid #fdc11f;
+            transition: 0.2s;
+            margin-right: 30px;
+            &:hover{
+              background-color: #fdc11f;
+              color: black;
+              border: 1px solid $primarycolor;
+            }
+          }
+
+          .Reg_btn{
+            background-color: transparent;
+            width: 100px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color:$primarycolor;
+            border:1px solid #fdc11f ;
+            transition: 0.2s ease;
+            &:hover{
+              background-color: #fdc11f;
+              color:$secondarycolor;
+              border: 1px solid $primarycolor;
+            }
+          }
+        }
+      }
+    
+      
+    }
+
+    .image{
+      display: flex;
+      align-items: center;
+    }
+
+  
